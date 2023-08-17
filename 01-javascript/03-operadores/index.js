@@ -30,6 +30,8 @@ console.log('Incremento: ' + incremento); // 11
 var decremento = --y;
 console.log('Decremento: ' + decremento, '\n'); // 1
 
+
+
 // Operadores de Atribuição
 console.log('Operadores de Atribuição');
 
@@ -53,6 +55,8 @@ console.log('Atribuição de potenciação: ' + x); // 100
 
 x %= y; // Equivale: x = x % y
 console.log('Atribuição de módulo: ' + x, '\n'); // 0
+
+
 
 // Operadores Relacionais (comparação)
 console.log('Operadores Relacionais');
@@ -83,4 +87,24 @@ console.log('Menor ou Igual: ' + resultado); // false
 
 x = 2;
 resultado = (x >= y); // É menor ou igual?
-console.log('Maior ou Igual: ' + resultado); // true
+console.log('Maior ou Igual: ' + resultado, '\n'); // true
+
+
+// Operadores Lógicos (Verdadeiro/Falso)
+console.log('Operadores Lógicos (Verdadeiro/Falso)');
+var x = 10, y = 2, resultado;
+
+resultado = (x != y && x >= y); // Valores diferentes E maior ou igual?
+console.log('Diferente E Maior ou Igual: ' + resultado); // true
+
+resultado = (x != y && x < y); // Valores diferentes E menor que?
+console.log('Diferente E Menor que: ' + resultado); // false
+
+resultado = (x != y || x < y); // Valores diferentes OU menor que?
+console.log('Diferente OU Menor que: ' + resultado); // true
+
+resultado = (x == y || x <= y); // Valores diferentes OU menor ou igual?
+console.log('Igual OU Menor ou Igual: ' + resultado); // false
+
+resultado = !(x == y); // Negação de valores iguais
+console.log('Negação de Igual: ' + resultado); // true
